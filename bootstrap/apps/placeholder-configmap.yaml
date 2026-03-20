@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: bootstrap-placeholder
-  namespace: argocd
-data:
-  note: Replace this placeholder with real Applications or Kustomizations.

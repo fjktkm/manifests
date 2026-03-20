@@ -29,7 +29,9 @@ Raspberry Pi 3 台で構成した `k3s` クラスタを `Argo CD` で GitOps 運
 
 - `bootstrap/project.yaml`
 - `bootstrap/root-application.yaml`
-- `bootstrap/apps/placeholder-configmap.yaml`
+- `bootstrap/apps/platform-namespaces.yaml`
+
+最初の子 `Application` として、`platform/namespaces` を管理対象にしている。
 
 `origin/main` に反映後、root Application を apply して GitOps 管理へ移行する。
 
