@@ -1,0 +1,140 @@
+storage:
+  type: sqlite
+  path: /data/data.db
+
+ui:
+  title: NITech Status
+  header: NITech Status
+  dashboard-subheading: 本サイトは、個人が運営している非公式サイトです。名古屋工業大学とは一切関係ありません。
+  default-sort-by: health
+
+endpoints:
+  - name: 大学公式サイト
+    url: "https://www.nitech.ac.jp/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: 図書館
+    url: "https://www.lib.nitech.ac.jp/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: 図書館蔵書検索（名工大 OPAC）
+    url: "https://opac.lib.nitech.ac.jp/opc/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: 情報基盤センター
+    url: "https://www.cc.nitech.ac.jp/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: 認証基盤システム（OpenAM）
+    url: "https://slb4oam.ict.nitech.ac.jp/openam/XUI/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: 権威 DNS サーバー（ns1.nitech.ac.jp）
+    url: "133.68.21.192"
+    interval: 600s
+    dns:
+      query-name: "www.nitech.ac.jp"
+      query-type: "A"
+    conditions:
+      - "[DNS_RCODE] == NOERROR"
+
+  - name: 権威 DNS サーバー（ns2.nitech.ac.jp）
+    url: "133.68.2.1"
+    interval: 600s
+    dns:
+      query-name: "www.nitech.ac.jp"
+      query-type: "A"
+    conditions:
+      - "[DNS_RCODE] == NOERROR"
+
+  - name: オンライン授業サポートシステム（Moodle）
+    url: "https://cms7.ict.nitech.ac.jp/moodle40a/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: 学生用電子掲示板システム
+    url: "https://nitechbb.ict.nitech.ac.jp/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: 教育用 PC 利用者数
+    url: "https://util-rate.web.nitech.ac.jp/mobile/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: シラバス公開システム
+    url: "https://syllabus.ict.nitech.ac.jp/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: 履修登録サイト
+    url: "https://course.web.nitech.ac.jp/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: 規則集
+    url: "https://kisoku.web.nitech.ac.jp/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: コンピュータ倶楽部 NITMic
+    url: "https://nitmic.club.nitech.ac.jp/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: プログラミング部 C0de
+    url: "https://c0de-web.club.nitech.ac.jp/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
+
+  - name: 情報工学科・工学専攻 情報工学系
+    url: "https://www.cs.nitech.ac.jp/"
+    interval: 600s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 10000"
+      - "[CERTIFICATE_EXPIRATION] > 168h"
