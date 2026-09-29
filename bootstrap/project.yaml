@@ -7,10 +7,13 @@ spec:
   description: Bootstrap project for this repository.
   sourceRepos:
     - https://github.com/fjktkm/manifests.git
+    - https://charts.longhorn.io/
   destinations:
     - namespace: argocd
       server: https://kubernetes.default.svc
     - namespace: workloads
+      server: https://kubernetes.default.svc
+    - namespace: longhorn-system
       server: https://kubernetes.default.svc
   clusterResourceWhitelist:
     - group: "*"
