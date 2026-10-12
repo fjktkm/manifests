@@ -8,12 +8,15 @@ spec:
   sourceRepos:
     - https://github.com/fjktkm/manifests.git
     - https://charts.longhorn.io/
+    - https://kubernetes-sigs.github.io/headlamp/
   destinations:
     - namespace: argocd
       server: https://kubernetes.default.svc
     - namespace: workloads
       server: https://kubernetes.default.svc
     - namespace: longhorn-system
+      server: https://kubernetes.default.svc
+    - namespace: headlamp
       server: https://kubernetes.default.svc
   clusterResourceWhitelist:
     - group: "*"
