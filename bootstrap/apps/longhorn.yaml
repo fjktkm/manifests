@@ -11,6 +11,11 @@ spec:
     targetRevision: v1.12.1
     helm:
       values: |
+        global:
+          nodeSelector:
+            homelab.fjktkm/worker: "true"
+        defaultSettings:
+          systemManagedComponentsNodeSelector: "homelab.fjktkm/worker:true"
         persistence:
           defaultClass: true
           dataEngine: v1
