@@ -12,10 +12,13 @@ spec:
     helm:
       values: |
         global:
-          nodeSelector:
-            homelab.fjktkm/worker: "true"
+          tolerations:
+            - key: node-role.kubernetes.io/control-plane
+              operator: Exists
+              effect: NoSchedule
         defaultSettings:
-          systemManagedComponentsNodeSelector: "homelab.fjktkm/worker:true"
+          systemManagedComponentsNodeSelector: ""
+          taintToleration: "node-role.kubernetes.io/control-plane:NoSchedule"
         persistence:
           defaultClass: true
           dataEngine: v1
