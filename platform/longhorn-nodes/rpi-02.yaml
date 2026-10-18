@@ -6,3 +6,12 @@ metadata:
 spec:
   allowScheduling: true
   evictionRequested: false
+  disks:
+    default-disk-raspios:
+      allowScheduling: true
+      diskDriver: ""
+      diskType: filesystem
+      evictionRequested: false
+      path: /var/lib/longhorn/
+      storageReserved: 75430488883
+      tags: []
