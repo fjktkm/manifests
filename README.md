@@ -10,3 +10,14 @@
 | opt-01   | Dell OptiPlex 3080 Micro  | Ubuntu Server 26.04 LTS       | Intel Core i5-10500T (6C/12T)           | 8 GB   | 256 GB NVMe SSD  | worker              |
 | opt-02   | Dell OptiPlex 3080 Micro  | Ubuntu Server 26.04 LTS       | Intel Core i5-10500T (6C/12T)           | 8 GB   | 256 GB NVMe SSD  | worker              |
 | opt-03   | Dell OptiPlex 3080 Micro  | Ubuntu Server 26.04 LTS       | Intel Core i5-10500T (6C/12T)           | 8 GB   | 256 GB NVMe SSD  | worker              |
+
+## Services
+
+| Name          | URL                                |
+| ------------- | ---------------------------------- |
+| Argo CD       | <https://argocd.fjktkm.com>        |
+| Longhorn      | <https://longhorn.fjktkm.com>      |
+| Headlamp      | <https://headlamp.fjktkm.com>      |
+| cloudflared   |                                    |
+| nitech-status | <https://nitech-status.fjktkm.com> |
+| pdf2image     |                                    |
