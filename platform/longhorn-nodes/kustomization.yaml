@@ -1,0 +1,6 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - rpi-01.yaml
+  - rpi-02.yaml
+  - rpi-03.yaml
