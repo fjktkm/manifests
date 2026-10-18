@@ -1,8 +1,0 @@
-apiVersion: longhorn.io/v1beta2
-kind: Node
-metadata:
-  name: rpi-03
-  namespace: longhorn-system
-spec:
-  allowScheduling: true
-  evictionRequested: false

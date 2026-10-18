@@ -17,7 +17,6 @@ spec:
               operator: Exists
               effect: NoSchedule
         defaultSettings:
-          systemManagedComponentsNodeSelector: ""
           taintToleration: "node-role.kubernetes.io/control-plane:NoSchedule"
         persistence:
           defaultClass: true
