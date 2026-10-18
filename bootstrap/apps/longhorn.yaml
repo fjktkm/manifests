@@ -18,10 +18,6 @@ spec:
               effect: NoSchedule
         defaultSettings:
           taintToleration: "node-role.kubernetes.io/control-plane:NoSchedule"
-        persistence:
-          defaultClass: true
-          dataEngine: v1
-          defaultClassReplicaCount: 3
         preUpgradeChecker:
           jobEnabled: false
   destination:
