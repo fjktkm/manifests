@@ -5,4 +5,4 @@ resources:
   - deploy-commands-job.yaml
 images:
   - name: ghcr.io/fjktkm/pdf2image
-    newTag: 1.0.0
+    newTag: 1.0.1
