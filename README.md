@@ -13,11 +13,12 @@
 
 ## Services
 
-| Name          | URL                                |
-| ------------- | ---------------------------------- |
-| Argo CD       | <https://argocd.fjktkm.com>        |
-| Longhorn      | <https://longhorn.fjktkm.com>      |
-| Headlamp      | <https://headlamp.fjktkm.com>      |
-| cloudflared   |                                    |
-| nitech-status | <https://nitech-status.fjktkm.com> |
-| pdf2image     |                                    |
+| Name                  | URL                                |
+| --------------------- | ---------------------------------- |
+| Argo CD               | <https://argocd.fjktkm.com>        |
+| Argo CD Image Updater |                                    |
+| Longhorn              | <https://longhorn.fjktkm.com>      |
+| Headlamp              | <https://headlamp.fjktkm.com>      |
+| cloudflared           |                                    |
+| nitech-status         | <https://nitech-status.fjktkm.com> |
+| pdf2image             |                                    |

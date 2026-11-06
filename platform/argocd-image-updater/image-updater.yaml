@@ -1,0 +1,19 @@
+apiVersion: argocd-image-updater.argoproj.io/v1alpha1
+kind: ImageUpdater
+metadata:
+  name: image-updater
+  namespace: argocd
+spec:
+  writeBackConfig:
+    method: git:secret:argocd/git-creds
+    gitConfig:
+      writeBackTarget: kustomization
+  applicationRefs:
+    - namePattern: pdf2image
+      images:
+        - alias: pdf2image
+          imageName: ghcr.io/fjktkm/pdf2image
+    - namePattern: nitech-status
+      images:
+        - alias: gatus
+          imageName: ghcr.io/twin/gatus

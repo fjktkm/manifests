@@ -11,6 +11,7 @@ spec:
     - https://github.com/fjktkm/manifests.git
     - https://charts.longhorn.io/
     - https://kubernetes-sigs.github.io/headlamp/
+    - https://argoproj.github.io/argo-helm
   destinations:
     - namespace: argocd
       server: https://kubernetes.default.svc

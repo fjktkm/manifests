@@ -8,3 +8,6 @@ configMapGenerator:
   - name: nitech-status-config
     files:
       - config.yaml=config/config.yaml
+images:
+  - name: ghcr.io/twin/gatus
+    newTag: v5.37.0
