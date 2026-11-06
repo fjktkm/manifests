@@ -10,4 +10,4 @@ configMapGenerator:
       - config.yaml=config/config.yaml
 images:
   - name: ghcr.io/twin/gatus
-    newTag: v5.37.0
+    newTag: v5.38.0
