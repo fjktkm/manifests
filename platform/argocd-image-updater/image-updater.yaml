@@ -17,3 +17,9 @@ spec:
       images:
         - alias: gatus
           imageName: ghcr.io/twin/gatus
+    - namePattern: cloudflared
+      images:
+        - alias: cloudflared
+          imageName: cloudflare/cloudflared
+          commonUpdateSettings:
+            allowTags: regexp:^\d+\.\d+\.\d+$
