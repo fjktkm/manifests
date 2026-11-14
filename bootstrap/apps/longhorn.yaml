@@ -18,6 +18,7 @@ spec:
               effect: NoSchedule
         defaultSettings:
           taintToleration: "node-role.kubernetes.io/control-plane:NoSchedule"
+          concurrentAutomaticEngineUpgradePerNodeLimit: 1
         preUpgradeChecker:
           jobEnabled: false
   destination:
