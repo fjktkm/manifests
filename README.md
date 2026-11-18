@@ -17,6 +17,7 @@
 | --------------------- | ---------------------------------- |
 | Argo CD               | <https://argocd.fjktkm.com>        |
 | Argo CD Image Updater |                                    |
+| External Secrets      |                                    |
 | Longhorn              | <https://longhorn.fjktkm.com>      |
 | Headlamp              | <https://headlamp.fjktkm.com>      |
 | cloudflared           |                                    |
