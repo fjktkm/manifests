@@ -4,6 +4,7 @@ resources:
   - external-secret.yaml
   - ghcr-pull-secret.yaml
   - web-pvc.yaml
+  - web-snapshot-recurring-job.yaml
   - web-deployment.yaml
   - web-service.yaml
   - scanner-pvc.yaml
