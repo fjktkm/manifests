@@ -75,17 +75,23 @@ spec:
           dashboards:
             community:
               longhorn:
-                gnetId: 13032
-                revision: 6
-                datasource: Prometheus
-              argocd:
-                gnetId: 14584
-                revision: 1
-                datasource: Prometheus
+                gnetId: 16888
+                revision: 14
+                datasource:
+                  - name: DS_PROMETHEUS
+                    value: prometheus
+              argocd-operational:
+                gnetId: 19993
+                revision: 9
+              argocd-application:
+                gnetId: 19974
+                revision: 8
               cloudflared:
-                gnetId: 17457
-                revision: 6
-                datasource: Prometheus
+                gnetId: 24874
+                revision: 4
+                datasource:
+                  - name: DS_PROMETHEUS
+                    value: prometheus
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
