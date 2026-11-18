@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - image-updater.yaml
   - external-secret.yaml
+  - duel-masters-ml-ghcr-pull.yaml

@@ -23,3 +23,4 @@
 | cloudflared           |                                    |
 | nitech-status         | <https://nitech-status.fjktkm.com> |
 | pdf2image             |                                    |
+| duel-masters-ml       |                                    |

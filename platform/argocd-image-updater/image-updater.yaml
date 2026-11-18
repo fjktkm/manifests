@@ -17,6 +17,22 @@ spec:
       images:
         - alias: gatus
           imageName: ghcr.io/twin/gatus
+    - namePattern: duel-masters-ml
+      images:
+        - alias: dm-web
+          imageName: ghcr.io/mass-ms/duel-masters-ml
+          commonUpdateSettings:
+            allowTags: regexp:^\d+\.\d+\.\d+$
+            pullSecret: pullsecret:argocd/duel-masters-ml-ghcr-pull
+            platforms:
+              - linux/amd64
+        - alias: dm-scanner
+          imageName: ghcr.io/mass-ms/duel-masters-ml/dm-scanner
+          commonUpdateSettings:
+            allowTags: regexp:^\d+\.\d+\.\d+$
+            pullSecret: pullsecret:argocd/duel-masters-ml-ghcr-pull
+            platforms:
+              - linux/amd64
     - namePattern: cloudflared
       images:
         - alias: cloudflared

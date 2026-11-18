@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - external-secret.yaml
+  - ghcr-pull-secret.yaml
+  - web-pvc.yaml
+  - web-deployment.yaml
+  - web-service.yaml
+  - scanner-pvc.yaml
+  - scanner-deployment.yaml
+  - scanner-service.yaml
+images:
+  - name: ghcr.io/mass-ms/duel-masters-ml
+    newTag: 0.6.0
+  - name: ghcr.io/mass-ms/duel-masters-ml/dm-scanner
+    newTag: 0.6.0
