@@ -4,4 +4,5 @@ resources:
   - grafana-admin-external-secret.yaml
   - argocd-service-monitors.yaml
   - longhorn-service-monitor.yaml
+  - longhorn-network-policy.yaml
   - cloudflared-pod-monitor.yaml
