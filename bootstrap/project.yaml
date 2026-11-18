@@ -8,7 +8,6 @@ spec:
   sourceRepos:
     - https://github.com/fjktkm/manifests.git
     - https://charts.longhorn.io/
-    - https://kubernetes-sigs.github.io/headlamp/
     - https://argoproj.github.io/argo-helm
     - https://charts.external-secrets.io
     - https://prometheus-community.github.io/helm-charts
@@ -20,8 +19,6 @@ spec:
     - namespace: longhorn-system
       server: https://kubernetes.default.svc
     - namespace: external-secrets
-      server: https://kubernetes.default.svc
-    - namespace: headlamp
       server: https://kubernetes.default.svc
     - namespace: monitoring
       server: https://kubernetes.default.svc
