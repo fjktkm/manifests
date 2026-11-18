@@ -20,6 +20,7 @@
 | External Secrets      |                                    |
 | Longhorn              | <https://longhorn.fjktkm.com>      |
 | Headlamp              | <https://headlamp.fjktkm.com>      |
+| kube-prometheus-stack | <https://grafana.fjktkm.com>       |
 | cloudflared           |                                    |
 | nitech-status         | <https://nitech-status.fjktkm.com> |
 | pdf2image             |                                    |
