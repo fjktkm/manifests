@@ -33,6 +33,10 @@ spec:
             pullSecret: pullsecret:argocd/duel-masters-ml-ghcr-pull
             platforms:
               - linux/amd64
+        - alias: cloudflared
+          imageName: cloudflare/cloudflared
+          commonUpdateSettings:
+            allowTags: regexp:^\d+\.\d+\.\d+$
     - namePattern: cloudflared
       images:
         - alias: cloudflared

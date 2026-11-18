@@ -32,14 +32,12 @@ spec:
           env:
             - name: DM_SCAN_URL
               value: http://dm-scanner:8560
-            # TODO: Cloudflare Access のアプリを作ったら埋める (空のあいだは JWT の検証が無効)
             - name: DM_ACCESS_TEAM_DOMAIN
-              value: ""
+              value: mass-ms.cloudflareaccess.com
             - name: DM_ACCESS_AUD
-              value: ""
-            # TODO: 公開するホスト名が決まったら埋める (空のあいだは AI コネクタが無効)
+              value: b42b7c809a435d3e58171b801726eebdfd2f1be875d90ad6365781517bf75036
             - name: DM_PUBLIC_URL
-              value: ""
+              value: https://dm.mass-hub.dev
             - name: DM_OWNER_EMAIL
               valueFrom:
                 secretKeyRef:
