@@ -48,7 +48,7 @@ spec:
             - name: FILE_STORAGE_LOCAL_ROOT_DIR
               value: /var/lib/outline/data
             - name: FILE_STORAGE_UPLOAD_MAX_SIZE
-              value: "262144000"
+              value: "96000000"
             - name: DEFAULT_LANGUAGE
               value: ja_JP
             - name: ENABLE_UPDATES
