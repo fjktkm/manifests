@@ -6,8 +6,8 @@ metadata:
 spec:
   name: outline-daily-snapshot
   task: snapshot
-  # 06:00 JST (Longhorn evaluates cron in UTC)
-  cron: "0 21 * * *"
+  # 06:15 JST with the current kube-controller-manager time zone.
+  cron: "15 6 * * *"
   retain: 7
   concurrency: 1
   groups: []
