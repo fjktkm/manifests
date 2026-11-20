@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: outline-postgres
+spec:
+  selector:
+    app.kubernetes.io/name: outline-postgres
+  ports:
+    - name: postgres
+      port: 5432
+      targetPort: postgres

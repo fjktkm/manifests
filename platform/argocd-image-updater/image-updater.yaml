@@ -37,6 +37,12 @@ spec:
           imageName: cloudflare/cloudflared
           commonUpdateSettings:
             allowTags: regexp:^\d+\.\d+\.\d+$
+    - namePattern: outline
+      images:
+        - alias: outline
+          imageName: outlinewiki/outline
+          commonUpdateSettings:
+            allowTags: regexp:^\d+\.\d+\.\d+$
     - namePattern: cloudflared
       images:
         - alias: cloudflared

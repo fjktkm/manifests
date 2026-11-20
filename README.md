@@ -24,3 +24,4 @@
 | nitech-status         | <https://nitech-status.fjktkm.com> |
 | pdf2image             |                                    |
 | duel-masters-ml       |                                    |
+| Outline               | <https://outline.fjktkm.com>       |

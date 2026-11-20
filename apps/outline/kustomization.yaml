@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - external-secret.yaml
+  - snapshot-recurring-job.yaml
+  - postgres-pvc.yaml
+  - postgres-deployment.yaml
+  - postgres-service.yaml
+  - redis-deployment.yaml
+  - redis-service.yaml
+  - outline-pvc.yaml
+  - outline-deployment.yaml
+  - outline-service.yaml
+images:
+  - name: outlinewiki/outline
+    newTag: 1.13.0
+  - name: postgres
+    newTag: 18.7-alpine
+  - name: redis
+    newTag: 8.8.4-alpine
