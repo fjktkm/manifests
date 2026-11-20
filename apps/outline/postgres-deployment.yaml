@@ -40,13 +40,21 @@ spec:
           ports:
             - name: postgres
               containerPort: 5432
+          startupProbe:
+            exec:
+              command: ["pg_isready", "-U", "outline", "-d", "outline"]
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 60
           readinessProbe:
             exec:
               command: ["pg_isready", "-U", "outline", "-d", "outline"]
+            timeoutSeconds: 5
           livenessProbe:
             exec:
               command: ["pg_isready", "-U", "outline", "-d", "outline"]
-            initialDelaySeconds: 30
+            timeoutSeconds: 5
+            failureThreshold: 6
           resources:
             requests:
               cpu: 100m
@@ -62,7 +70,7 @@ spec:
             - name: data
               mountPath: /var/lib/postgresql
             - name: run
-              mountPath: /var/run/postgresql
+              mountPath: /run/postgresql
       volumes:
         - name: data
           persistentVolumeClaim:
