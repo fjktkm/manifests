@@ -14,7 +14,7 @@ resources:
   - cloudflared-deployment.yaml
 images:
   - name: cloudflare/cloudflared
-    newTag: 2026.11.1
+    newTag: 2026.11.2
   - name: ghcr.io/mass-ms/duel-masters-ml
     newTag: 0.6.13
   - name: ghcr.io/mass-ms/duel-masters-ml/dm-scanner
