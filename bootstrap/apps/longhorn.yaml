@@ -19,6 +19,8 @@ spec:
         defaultSettings:
           taintToleration: "node-role.kubernetes.io/control-plane:NoSchedule"
           concurrentAutomaticEngineUpgradePerNodeLimit: 1
+          fastReplicaRebuildEnabled: '{"v1":"false","v2":"false"}'
+          nodeDownPodDeletionPolicy: delete-both-statefulset-and-deployment-pod
         preUpgradeChecker:
           jobEnabled: false
   destination:
