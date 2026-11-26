@@ -18,4 +18,4 @@ images:
   - name: ghcr.io/mass-ms/duel-masters-ml
     newTag: 0.6.17
   - name: ghcr.io/mass-ms/duel-masters-ml/dm-scanner
-    newTag: 0.6.17
+    newTag: 0.6.18
