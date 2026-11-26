@@ -6,8 +6,8 @@ metadata:
 spec:
   name: dm-web-data-daily-snapshot
   task: snapshot
-  # 06:00 JST with the current kube-controller-manager time zone.
-  cron: "0 6 * * *"
+  # 03:00 JST with the current kube-controller-manager time zone.
+  cron: "0 3 * * *"
   retain: 7
   concurrency: 1
   groups: []

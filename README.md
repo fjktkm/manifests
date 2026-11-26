@@ -25,3 +25,12 @@
 | pdf2image             |                                    |
 | duel-masters-ml       |                                    |
 | Outline               | <https://outline.fjktkm.com>       |
+
+## Scheduled operations
+
+| Operation                                  | Time (JST) | Schedule |
+| ------------------------------------------ | ---------- | -------- |
+| Longhorn Outline volume snapshots          | 02:00      | Daily    |
+| Longhorn duel-masters-ml web data snapshot | 03:00      | Daily    |
+| UDM SE UniFi OS auto-update                | 05:00      | Daily    |
+| UniFi Network app auto-update              | 05:00      | Daily    |
