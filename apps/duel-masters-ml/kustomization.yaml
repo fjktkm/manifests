@@ -16,6 +16,6 @@ images:
   - name: cloudflare/cloudflared
     newTag: 2026.11.2
   - name: ghcr.io/mass-ms/duel-masters-ml
-    newTag: 0.6.15
+    newTag: 0.6.16
   - name: ghcr.io/mass-ms/duel-masters-ml/dm-scanner
     newTag: 0.6.16
